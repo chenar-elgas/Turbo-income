@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Turbo Income - کافی نت آنلاین</title>
+    <link rel="manifest" href="manifest.json" />
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            direction: rtl;
+            background-color: #f9f9f9;
+            margin: 0; padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #0b7285;
+            margin-bottom: 30px;
+        }
+        .service {
+            background-color: white;
+            border-radius: 10px;
+            margin: 10px auto;
+            padding: 20px;
+            max-width: 400px;
+            box-shadow: 0 2px 8px rgba(11,114,133,0.3);
+        }
+        .service h2 {
+            margin: 0 0 10px 0;
+        }
+        .service a {
+            display: inline-block;
+            background-color: #0b7285;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .service a:hover {
+            background-color: #095b67;
+        }
+    </style>
+</head>
+<body>
+    <h1>Turbo Income - کافی نت آنلاین</h1>
+    
+    <div class="service">
+        <h2>ثبت‌نام کنکور</h2>
+        <a href="#" onclick="alert('به صفحه پرداخت منتقل می‌شوید'); return false;">پرداخت</a>
+    </div>
+    
+    <div class="service">
+        <h2>کارت ملی هوشمند</h2>
+        <a href="#" onclick="alert('به صفحه پرداخت منتقل می‌شوید'); return false;">پرداخت</a>
+    </div>
+    
+    <div class="service">
+        <h2>گواهی عدم سوء پیشینه</h2>
+        <a href="#" onclick="alert('به صفحه پرداخت منتقل می‌شوید'); return false;">پرداخت</a>
+    </div>
+    
+    <div class="service">
+        <h2>ترجمه رسمی مدارک</h2>
+        <a href="#" onclick="alert('به صفحه پرداخت منتقل می‌شوید'); return false;">پرداخت</a>
+    </div>
+
+    <script>
+        // اینجا می‌تونی کد مربوط به درگاه پرداخت رو بزاری یا به صفحه پرداخت لینک بدی
+    </script>
+</body>
+</html>
+
+{
+  "name": "Turbo Income",
+  "short_name": "TurboIncome",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f9f9f9",
+  "theme_color": "#0b7285",
+  "description": "اپلیکیشن حسابداری کافی نت با خدمات پرداخت آنلاین",
+  "lang": "fa",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
