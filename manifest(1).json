@@ -1,0 +1,17 @@
+
+{
+  "name": "Turbo Income",
+  "short_name": "Income",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0072ff",
+  "theme_color": "#00c6ff",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

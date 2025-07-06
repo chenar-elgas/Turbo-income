@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>Turbo Income - حسابداری کافی‌نت</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <style>
+        body {
+            font-family: sans-serif;
+            direction: rtl;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            color: #fff;
+            padding: 20px;
+        }
+        h1 { text-align: center; }
+        .service {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid #fff;
+            border-radius: 10px;
+            margin: 10px 0;
+            padding: 15px;
+        }
+        .btn {
+            background: #fff;
+            color: #0072ff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .btn:hover { background: #e6e6e6; }
+        #total {
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>💼 Turbo Income</h1>
+    <p style="text-align:center;">ثبت خدمات و درآمد روزانه کافی‌نت</p>
+
+    <div class="service"><p>✅ پرینت و کپی - ۵۰۰۰ تومان</p><button class="btn" onclick="addIncome(5000)">افزودن</button></div>
+    <div class="service"><p>✅ ثبت‌نام آزمون - ۱۲۰۰۰ تومان</p><button class="btn" onclick="addIncome(12000)">افزودن</button></div>
+    <div class="service"><p>✅ تایپ مقاله - ۱۵۰۰۰ تومان</p><button class="btn" onclick="addIncome(15000)">افزودن</button></div>
+    <div class="service"><p>✅ رزرو بلیط - ۷۰۰۰ تومان</p><button class="btn" onclick="addIncome(7000)">افزودن</button></div>
+    <div class="service"><p>✅ پرداخت قبض - ۳۰۰۰ تومان</p><button class="btn" onclick="addIncome(3000)">افزودن</button></div>
+    <div class="service"><p>✅ ثبت‌نام اینترنت - ۱۰۰۰۰ تومان</p><button class="btn" onclick="addIncome(10000)">افزودن</button></div>
+
+    <div id="total">💰 درآمد امروز: ۰ تومان</div>
+
+    <script>
+        let total = 0;
+        function addIncome(amount) {
+            total += amount;
+            document.getElementById("total").innerText = "💰 درآمد امروز: " + total.toLocaleString() + " تومان";
+        }
+
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
+</body>
+</html>
